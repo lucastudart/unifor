@@ -42,36 +42,47 @@ I --> Z
 | 30 | V | 0 | V | "O número é par!" |
 
 ###exercicio 3
-```Início
-|
-V
-Receber nota1
-|
-V
-Receber nota2
-|
-V
-Calcular média = (nota1 + nota2) / 2
-|
-V
-Se média >= 6 então
-|   Sim
-|   |
-|   V
-|   Mostrar "Aprovado"
-|   |
-|   V
-|   Fim
-|
-V
-Se não
-|   Não
-|   |
-|   V
-|   Mostrar "Reprovado"
-|   |
-|   V
-|   Fim
-Fim
-```
+``` mermaid
+flowchart TD;
+    Inicio --> ReceberNota1;
+    ReceberNota1 --> ReceberNota2;
+    ReceberNota2 --> CalcularMedia;
+    CalcularMedia -->|Se média >= 6| Aprovado;
+    CalcularMedia -->|Se média < 6| Reprovado;
+    Aprovado --> MostrarAprovado;
+    Reprovado --> MostrarReprovado;
+    MostrarAprovado --> Fim;
+    MostrarReprovado --> Fim;
+ ```
+Algoritmo CalcularMediaEStatus
+    // Solicita e lê as duas notas do aluno
+    Escrever "Digite a primeira nota do aluno:"
+    Ler nota1
+    Escrever "Digite a segunda nota do aluno:"
+    Ler nota2
+    
+    // Calcula a média aritmética das notas
+    media <- (nota1 + nota2) / 2
+    
+    // Verifica se a média é maior ou igual a 6
+    Se media >= 6 Então
+        Escrever "O aluno está aprovado com média:", media
+    Senão
+        Escrever "O aluno está reprovado com média:", media
+    Fim Se
+Fim Algoritmo
+
+
+| número | número >= 0 | resto | resto == 0 | Saída |
+| ------ | ----------- | ----- | ---------- | ------|
+| -1     | F           |       |            | "O número deve ser positivo!" |
+| 0      | V           | 0     | V          | "O número é par!" |
+| 13     | V           | 1     | F          | "O número é ímpar!" |
+| 30     | V           | 0     | V          | "O número é par!" |
+
+###Exercicio 4
+
+
+
+
 
