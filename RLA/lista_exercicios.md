@@ -33,4 +33,45 @@ I --> Z
 12       ESCREVA "O número não é positivo!"
 13   FIM_ALGORITIMO
 
- 
+#### Teste de mesa 
+| numero | numero >= 0 | resto | resto == 0 | Saída |
+| -- | -- | -- | -- | -- | 
+| -1 | F |   |   | "O número deve ser postivo!" |
+| 0  | V | 0 | V | "O número é par!" |
+| 13 | V | 1 | F | "O número é impar!" |
+| 30 | V | 0 | V | "O número é par!" |
+
+###exercicio 3
+```Início
+|
+V
+Receber nota1
+|
+V
+Receber nota2
+|
+V
+Calcular média = (nota1 + nota2) / 2
+|
+V
+Se média >= 6 então
+|   Sim
+|   |
+|   V
+|   Mostrar "Aprovado"
+|   |
+|   V
+|   Fim
+|
+V
+Se não
+|   Não
+|   |
+|   V
+|   Mostrar "Reprovado"
+|   |
+|   V
+|   Fim
+Fim
+```
+
