@@ -3,9 +3,10 @@
 **disciplina**:Raciocínio logico algorítmico 
 ## Lista 2 
 
+
 ### Exercicio 1
 ### Fluxograma
-mermaid
+```mermaid
 flowchart TD
 A([INICIO]) --> B{{Digite o primeiro número}}
 B --> C[\num1\]
@@ -19,9 +20,9 @@ I --> J[soma = num1 + num2 + num3 + num4]
 J --> K[media = soma / 4]
 K --> L{{'A média é: ', media}}
 L --> M([FIM])
-
+```
 ### Pseudocodigo
-
+```
 1  ALGORITMO calcular_media
 2  DECLARE num1, num2, num3, num4, soma, media: REAL
 3  INICIO
@@ -38,7 +39,7 @@ L --> M([FIM])
 14   ESCREVA "A média é: ", media
 15 FIM
 
-
+```
 ### Teste de mesa
 
 
@@ -61,7 +62,7 @@ Este é um algoritmo simples e eficaz para calcular a média de um conjunto de n
 ### Exercicio 2
 
 ### Fluxograma
-mermaid
+```mermaid
 flowchart TD
 A([INICIO]) --> B{{Digite a temperatura em Celsius C}}
 B --> C[\temp_C\]
@@ -69,9 +70,9 @@ C --> D[Converter para Fahrenheit]
 D --> E[temp_F = 9/5 * temp_C + 32]
 E --> F{{A temperatura em Fahrenheit é: , temp_F}}
 F --> G([FIM])
-
+```
 ### Pseucodigo
-
+```
 1  ALGORITMO converter_temperatura
 2  DECLARE temp_C, temp_F: REAL
 3  INICIO
@@ -81,7 +82,7 @@ F --> G([FIM])
 7    ESCREVA "A temperatura em Fahrenheit é: ", temp_F
 8  FIM
 
-
+```
 ### Teste de mesa
 | Teste | temp_C | temp_F (cálculo esperado) | Saída esperada |
 | ----- | ------ | -------------------------- | --------------- |
@@ -99,7 +100,7 @@ Este é um algoritmo útil e direto para realizar a conversão de temperatura en
 ### Exercicio 3
 
 ### Fluxograma
-mermaid
+```mermaid
 flowchart TD
 A([INÍCIO]) --> B{{Digite o primeiro número}}
 B --> C[\num1\]
@@ -129,9 +130,9 @@ T -- NÃO --> W[Escrever Erro: Divisão por zero.]
 W --> L
 S -- NÃO --> X[Escrever Operador inválido.]
 X --> L
-
+```
 ### Pseudocodigo
-
+```
 1  ALGORITMO calculadora
 2  DECLARE num1, num2, resultado: REAL
 3  DECLARE operador: CARACTERE
@@ -162,7 +163,7 @@ X --> L
 28     ESCREVA "Operador inválido."
 29   FIM_SE
 30 FIM
-
+```
 ### Teste de mesa
 | Etapa | Descrição                              | Dados/Resultado |
 |-------|----------------------------------------|------------------|
@@ -189,7 +190,7 @@ Este é um algoritmo básico e útil para realizar operações aritméticas simp
 ### Exercicio 4
 
 ### Fluxograma
-mermaid
+```mermaid
 flowchart TD
 A([INÍCIO]) --> B{{Digite a idade}}
 B --> C[\idade\]
@@ -211,9 +212,9 @@ N --> L
 D -- NÃO --> O{{'Idade inválida'}}
 O --> L
 
-
+```
 ### Pseudocodigo
-
+```
 1  ALGORITMO categorizar_idade
 2  DECLARE idade: INTEIRO
 3  INICIO
@@ -238,7 +239,7 @@ O --> L
 22   FIM_SE
 23   
 24   FIM
-
+```
 ### Teste de mesa
 | Etapa | Descrição                                        | Dados/Resultado |
 |-------|--------------------------------------------------|------------------|
@@ -257,7 +258,7 @@ O --> L
 | Passo 6| Categoria: Adulto                               |                  |
 | Passo 7| Fim                                            |                  |
 ```
-### COMENTATIO
+### COMENTARIO
 Este pseudocódigo descreve um algoritmo simples para categorizar a idade de uma pessoa em diferentes faixas etárias, de acordo com critérios estabelecidos para cada categoria.
 
 O usuário é solicitado a inserir a idade, que é armazenada na variável 'idade'. Em seguida, o algoritmo verifica a idade inserida e, com base nessa idade, determina em qual categoria a pessoa se enquadra.
