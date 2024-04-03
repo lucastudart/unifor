@@ -5,7 +5,7 @@
 
 ### Exercicio 1
 ### Fluxograma
-```mermaid
+mermaid
 flowchart TD
 A([INICIO]) --> B{{Digite o primeiro número}}
 B --> C[\num1\]
@@ -19,9 +19,9 @@ I --> J[soma = num1 + num2 + num3 + num4]
 J --> K[media = soma / 4]
 K --> L{{'A média é: ', media}}
 L --> M([FIM])
-```
+
 ### Pseudocodigo
-```
+
 1  ALGORITMO calcular_media
 2  DECLARE num1, num2, num3, num4, soma, media: REAL
 3  INICIO
@@ -38,7 +38,7 @@ L --> M([FIM])
 14   ESCREVA "A média é: ", media
 15 FIM
 
-```
+
 ### Teste de mesa
 
 
@@ -46,10 +46,22 @@ L --> M([FIM])
 | ----- | ---- | ---- | ---- | ---- | ----------------------- | ------------------------ | --------------- |
 | 1     | 2    | 4    | 6    | 8    | 20 (2 + 4 + 6 + 8)      | 5                        | "A média é: 5"  |
 
+### COMENTARIO 
+Este pseudocódigo descreve um algoritmo simples para calcular a média de quatro números fornecidos pelo usuário.
+
+Inicialmente, o usuário é solicitado a inserir quatro números. Cada número é armazenado em uma variável diferente: 'num1', 'num2', 'num3' e 'num4'. 
+
+Em seguida, o algoritmo calcula a soma desses quatro números e armazena o resultado na variável 'soma'. Depois, a média é calculada dividindo a soma pelo número de elementos, que neste caso é 4. O resultado é armazenado na variável 'media'.
+
+Por fim, o algoritmo exibe a média calculada na tela.
+
+Este é um algoritmo simples e eficaz para calcular a média de um conjunto de números. Ele pode ser útil em diversas situações, como em aplicações de processamento de dados ou em sistemas de notas escolares.
+
+
 ### Exercicio 2
 
 ### Fluxograma
-```mermaid
+mermaid
 flowchart TD
 A([INICIO]) --> B{{Digite a temperatura em Celsius C}}
 B --> C[\temp_C\]
@@ -57,9 +69,9 @@ C --> D[Converter para Fahrenheit]
 D --> E[temp_F = 9/5 * temp_C + 32]
 E --> F{{A temperatura em Fahrenheit é: , temp_F}}
 F --> G([FIM])
-```
+
 ### Pseucodigo
-```
+
 1  ALGORITMO converter_temperatura
 2  DECLARE temp_C, temp_F: REAL
 3  INICIO
@@ -69,16 +81,25 @@ F --> G([FIM])
 7    ESCREVA "A temperatura em Fahrenheit é: ", temp_F
 8  FIM
 
-```
+
 ### Teste de mesa
 | Teste | temp_C | temp_F (cálculo esperado) | Saída esperada |
 | ----- | ------ | -------------------------- | --------------- |
 | 1     | 0      | 32                         | "A temperatura em Fahrenheit é: 32" |
 
+ ### COMENTARIO 
+ Este pseudocódigo descreve um algoritmo simples para converter uma temperatura de Celsius para Fahrenheit. 
+
+Inicialmente, o usuário é solicitado a inserir a temperatura em graus Celsius ('temp_C'). Em seguida, o algoritmo realiza o cálculo da conversão de Celsius para Fahrenheit usando a fórmula padrão de conversão, que é multiplicar a temperatura em Celsius por 9/5 e adicionar 32. O resultado da conversão é armazenado na variável 'temp_F'. 
+
+Por fim, o algoritmo exibe a temperatura convertida em Fahrenheit na tela.
+
+Este é um algoritmo útil e direto para realizar a conversão de temperatura entre as escalas Celsius e Fahrenheit. Pode ser empregado em muitas aplicações práticas, como em programas de previsão do tempo, sistemas de controle de temperatura ou em tarefas de engenharia e física.
+
 ### Exercicio 3
 
 ### Fluxograma
-```mermaid
+mermaid
 flowchart TD
 A([INÍCIO]) --> B{{Digite o primeiro número}}
 B --> C[\num1\]
@@ -108,9 +129,9 @@ T -- NÃO --> W[Escrever Erro: Divisão por zero.]
 W --> L
 S -- NÃO --> X[Escrever Operador inválido.]
 X --> L
-```
+
 ### Pseudocodigo
-```
+
 1  ALGORITMO calculadora
 2  DECLARE num1, num2, resultado: REAL
 3  DECLARE operador: CARACTERE
@@ -141,7 +162,7 @@ X --> L
 28     ESCREVA "Operador inválido."
 29   FIM_SE
 30 FIM
-```
+
 ### Teste de mesa
 | Etapa | Descrição                              | Dados/Resultado |
 |-------|----------------------------------------|------------------|
@@ -154,10 +175,21 @@ X --> L
 | Passo 6| Imprimir resultado:                   | 15               |
 | Passo 7| Fim                                   |                  |
 
+### COMENTARIO 
+Este pseudocódigo descreve uma calculadora simples que permite ao usuário realizar operações básicas de adição, subtração, multiplicação e divisão entre dois números.
+
+O usuário é solicitado a inserir dois números e o operador desejado (adição, subtração, multiplicação ou divisão). Depois de inserir os números e o operador, o algoritmo verifica qual operação deve ser realizada com base no operador fornecido.
+
+Se o operador for '+', o algoritmo realiza a adição dos dois números e exibe o resultado. Se for '-', realiza a subtração, se for '*', realiza a multiplicação e se for '/', realiza a divisão. Além disso, o algoritmo também verifica se a divisão por zero é evitada.
+
+Caso o operador inserido não seja válido, o algoritmo exibe uma mensagem de erro indicando que o operador é inválido.
+
+Este é um algoritmo básico e útil para realizar operações aritméticas simples, podendo ser útil em várias situações cotidianas que envolvam cálculos simples.
+
 ### Exercicio 4
 
 ### Fluxograma
-```mermaid
+mermaid
 flowchart TD
 A([INÍCIO]) --> B{{Digite a idade}}
 B --> C[\idade\]
@@ -179,9 +211,9 @@ N --> L
 D -- NÃO --> O{{'Idade inválida'}}
 O --> L
 
-```
+
 ### Pseudocodigo
-```
+
 1  ALGORITMO categorizar_idade
 2  DECLARE idade: INTEIRO
 3  INICIO
@@ -206,7 +238,7 @@ O --> L
 22   FIM_SE
 23   
 24   FIM
-```
+
 ### Teste de mesa
 | Etapa | Descrição                                        | Dados/Resultado |
 |-------|--------------------------------------------------|------------------|
@@ -225,3 +257,11 @@ O --> L
 | Passo 6| Categoria: Adulto                               |                  |
 | Passo 7| Fim                                            |                  |
 ```
+### COMENTATIO
+Este pseudocódigo descreve um algoritmo simples para categorizar a idade de uma pessoa em diferentes faixas etárias, de acordo com critérios estabelecidos para cada categoria.
+
+O usuário é solicitado a inserir a idade, que é armazenada na variável 'idade'. Em seguida, o algoritmo verifica a idade inserida e, com base nessa idade, determina em qual categoria a pessoa se enquadra.
+
+Se a idade estiver entre 5 e 7 anos (inclusive), o algoritmo exibe a mensagem "Categoria: Infantil A". Se estiver entre 8 e 10 anos (inclusive), exibe "Categoria: Infantil B". Se estiver entre 11 e 13 anos (inclusive), exibe "Categoria: Juvenil A". Se estiver entre 14 e 17 anos (inclusive), exibe "Categoria: Juvenil B". Se a idade for maior que 17 anos, exibe "Categoria: Adulto".
+
+Este é um algoritmo eficiente e claro para classificar a idade em diferentes categorias, sendo útil em diversas situações, como em sistemas de inscrição esportiva, atividades recreativas ou eventos culturais que exigem categorização por faixa etária.
